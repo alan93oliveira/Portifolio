@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.degrade{
+    width: 100%;
+    padding: 300px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to left, black, rgb(29, 28, 28));
+    background-size: 500% 100%;
+    animation: degrade 5s infinite alternate;
+
+}
+
+.degrade h1{
+    color: white;
+    font-weight: lighter;
+}
+
+@keyframes degrade {
+    0%{
+        background-position-x: 0%;
+    }
+
+    100%{
+        background-position-x: 100%;
+    }
+}
